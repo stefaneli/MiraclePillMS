@@ -17,13 +17,65 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="33U-n1-LKr">
+                                <rect key="frame" x="135" y="42" width="105" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="W9u-lr-lD1"/>
+                                    <constraint firstAttribute="height" constant="101" id="dJo-e8-rpV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIRACLE PILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPF-5r-nhd">
+                                <rect key="frame" x="109.5" y="168" width="156" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="GU3-wU-Lpp"/>
+                                    <constraint firstAttribute="height" constant="21" id="r6d-pP-KNC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amT-8y-Gmk">
+                                <rect key="frame" x="168" y="197" width="39" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3ev-hf-qP1"/>
+                                    <constraint firstAttribute="width" constant="39" id="jkB-tu-Ngr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zb1-1C-4yV" userLabel="Devider">
+                                <rect key="frame" x="20" y="228" width="335" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="thK-Ff-DaD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zb1-1C-4yV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="5So-DX-PHF"/>
+                            <constraint firstItem="33U-n1-LKr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9b3-Yh-PdO"/>
+                            <constraint firstItem="amT-8y-Gmk" firstAttribute="centerX" secondItem="EPF-5r-nhd" secondAttribute="centerX" id="CF6-1D-tIg"/>
+                            <constraint firstAttribute="trailing" secondItem="Zb1-1C-4yV" secondAttribute="trailing" constant="20" id="DMx-gN-9xF"/>
+                            <constraint firstItem="Zb1-1C-4yV" firstAttribute="centerX" secondItem="amT-8y-Gmk" secondAttribute="centerX" id="GOy-Lp-ROk"/>
+                            <constraint firstItem="EPF-5r-nhd" firstAttribute="top" secondItem="33U-n1-LKr" secondAttribute="bottom" constant="25" id="Q0K-7D-mBQ"/>
+                            <constraint firstItem="EPF-5r-nhd" firstAttribute="centerX" secondItem="33U-n1-LKr" secondAttribute="centerX" id="ggj-1y-In8"/>
+                            <constraint firstItem="33U-n1-LKr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="hfr-0c-L85"/>
+                            <constraint firstItem="Zb1-1C-4yV" firstAttribute="top" secondItem="amT-8y-Gmk" secondAttribute="bottom" constant="10" id="k5I-Wf-HbX"/>
+                            <constraint firstItem="amT-8y-Gmk" firstAttribute="top" secondItem="EPF-5r-nhd" secondAttribute="bottom" constant="8" id="zBO-eP-6q0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191" y="-2"/>
+            <point key="canvasLocation" x="188" y="-3.1484257871064472"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="miraclePillEmoji" width="90" height="90"/>
+    </resources>
 </document>
